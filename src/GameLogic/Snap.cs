@@ -34,7 +34,7 @@ namespace CardGames.GameLogic
 		/// <summary>
 		/// Create a new game of Snap!
 		/// </summary>
-		public Snap ()
+		public Snap()
 		{
 			_deck = new Deck ();
             _gameTimer = SwinGame.CreateTimer();
@@ -90,7 +90,7 @@ namespace CardGames.GameLogic
 			if ( ! IsStarted )			// only start if not already started!
 			{
 				_started = true;
-				_deck.Shuffle ();		// Return the cards and shuffle
+				_deck.Shuffle();		// Return the cards and shuffle
 
 				FlipNextCard ();		// Flip the first card...
                 _gameTimer.Start();
@@ -154,7 +154,7 @@ namespace CardGames.GameLogic
 
 			// stop the game...
 			_started = false;
-            _gameTimer.Stop ();
+            _gameTimer.Stop();
 		}
 	
 		#region Snap Game Unit Tests
