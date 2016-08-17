@@ -29,18 +29,23 @@ namespace CardGames
 
             if (myGame.IsStarted)
             {
-                if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT) &&
-                SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
+                if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT) && SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
                 {
                     //TODO: add sound effects
+					SwinGame.LoadSoundEffectNamed("alligatorHiss", "alligatorHiss.wav");
+					SwinGame.PlaySoundEffect("alligatorHiss");
                 }
                 else if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT))
                 {
                     myGame.PlayerHit(0);
+					SwinGame.LoadSoundEffectNamed("Slap", "slap.wav");
+					SwinGame.PlaySoundEffect("Slap");
                 }
                 else if (SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
                 {
                     myGame.PlayerHit(1);
+					SwinGame.LoadSoundEffectNamed("horn", "car+horn+x.wav");
+					SwinGame.PlaySoundEffect("horn");
                 }
             }
 		}
