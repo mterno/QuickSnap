@@ -32,7 +32,6 @@ namespace CardGames
                 if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT) && SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
                 {
                     //TODO: add sound effects 
-
 					SwinGame.LoadSoundEffectNamed("alligatorHiss", "alligatorHiss.wav");
 					SwinGame.PlaySoundEffect("alligatorHiss");
                 }
